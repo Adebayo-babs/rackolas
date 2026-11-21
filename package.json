@@ -1,0 +1,16 @@
+{
+  "name": "rackolas-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Rackolas Distinctive Limited - website (React + Node.js)",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "install:all": "npm install --prefix client && npm install --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "dev:server": "npm run dev --prefix server",
+    "build": "npm run build --prefix client",
+    "start": "npm start --prefix server"
+  }
+}

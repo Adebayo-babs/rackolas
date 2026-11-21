@@ -1,0 +1,21 @@
+# Render Blueprint: one free web service runs the
+# React site and the Express API together.
+services:
+  - type: web
+    name: rackolas
+    runtime: node
+    plan: free
+    buildCommand: npm run install:all && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: ADMIN_TOKEN
+        generateValue: true
+      - key: NOTIFY_EMAIL
+        sync: false
+      - key: BREVO_API_KEY
+        sync: false
+      - key: MAIL_FROM
+        sync: false
