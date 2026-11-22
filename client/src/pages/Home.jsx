@@ -38,7 +38,7 @@ export default function Home() {
             <h1>
               <span className="hero__line">We build</span>
               <RotatingWord />
-              <span className="hero__line">that turn heads.</span>
+              <span className="hero__line">with distiction.</span>
             </h1>
             <p className="hero__lead">
               {company.name} delivers aluminium and stone-coated
